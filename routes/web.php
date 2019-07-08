@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/index','CategoryController@index');
-Route::get('/contact','CategoryController@contact');
+Route::get('/index','PageController@index');
+Route::get('/contact','PageController@contact');
+
