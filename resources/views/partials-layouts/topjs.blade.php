@@ -1,0 +1,1 @@
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>

@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts/master');
 });
+
+
+Route::get('/index','CategoryController@index');
+Route::get('/contact','CategoryController@contact');
