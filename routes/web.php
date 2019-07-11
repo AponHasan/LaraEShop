@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/index','PageController@index');
-Route::get('/contact','PageController@contact');
+Route::get('/index','PageController@index')->name('page.index');
+Route::get('/contact','PageController@contact')->namE('page.contact');
+
+Route::get('/products','ProductController@products')->name('product.index');
 
