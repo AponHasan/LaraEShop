@@ -21,3 +21,9 @@ Route::get('/contact','PageController@contact')->namE('page.contact');
 
 Route::get('/products','ProductController@products')->name('product.index');
 
+Route::group(['prefix'=>'admin'],function(){
+    Route::get('/','AdminPagesController@index')->name('admin.index');
+    Route::get('/product/create','ProductsController@index')->name('admin.product.create');
+});
+
+
