@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 @section('content')
 <!-- Right Panel -->
-<div id="right-panel" class="right-panel">
+
         <!-- Header-->
         <header id="header" class="header">
             <div class="top-left">
@@ -581,7 +581,5 @@
             <!-- /#add-category -->
             </div>
             <!-- .animated -->
-        </div>
-        <!-- /.content -->
-        <div class="clearfix"></div>
+        
         @endsection

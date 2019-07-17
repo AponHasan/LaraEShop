@@ -15,11 +15,11 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->biginteger('category_id');
-            $table->biginteger('brand_id');
+            $table->string('title')->nullable();
+            $table->biginteger('category_id')->nullable();
+            $table->biginteger('brand_id')->nullable();
             $table->string('description')->nullable();
-            $table->string('price');
+            $table->string('price')->nullable();
             $table->string('slug')->nullable();
             $table->integer('quantity')->default(1);
             $table->tinyInteger('status')->default(0);

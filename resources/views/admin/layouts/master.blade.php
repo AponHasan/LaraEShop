@@ -18,7 +18,11 @@
         @include('admin.layouts.partials-layouts.nav')
     </aside>
     <!-- /#left-panel -->
+    <div id="right-panel" class="right-panel">
     @yield('content')
+    </div>
+        <!-- /.content -->
+        <div class="clearfix"></div>
         <!-- Footer -->
         <footer class="site-footer">
         @include('admin.layouts.partials-layouts.footer')

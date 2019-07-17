@@ -23,7 +23,10 @@ Route::get('/products','ProductController@products')->name('product.index');
 
 Route::group(['prefix'=>'admin'],function(){
     Route::get('/','AdminPagesController@index')->name('admin.index');
-    Route::get('/product/create','ProductsController@index')->name('admin.product.create');
+
+    // Product
+    Route::get('/product/create','ProductController@getcreate')->name('admin.product.getcreate');
+    Route::post('/product/create','ProductController@postcreate')->name('admin.product.postcreate');
 });
 
 

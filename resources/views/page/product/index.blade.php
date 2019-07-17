@@ -45,7 +45,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card" style="width: 15rem;" align="center">
-                <img class="card-img-top feature-img" src="{{asset('images/products/'. 'mobile1.png')}}" alt="Card image cap">
+                <img class="card-img-top feature-img" src="{{asset('images/products/'. 'mobile1.png')}}" alt="Card image cap" enctype="multipart/form-data">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text"> 200 Tk</p>
