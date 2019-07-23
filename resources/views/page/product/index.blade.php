@@ -23,7 +23,7 @@
             </div>
         @endforeach
             
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="card" style="width: 15rem;" align="center">
                 <img class="card-img-top feature-img" src="{{asset('images/products/'. 'mobile1.png')}}" alt="Card image cap">
                     <div class="card-body">
@@ -92,7 +92,7 @@
                         <a href="#" class="btn btn-outline-primary">Add To Cart</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 @endsection

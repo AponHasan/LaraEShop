@@ -8,7 +8,7 @@
         <!-- Credit Card -->
         <div id="pay-invoice">
             <div class="card-body">
-                <form action="{{Route('admin.product.postcreate')}}" method="post" novalidate="novalidate">
+                <form action="{{Route('admin.product.postcreate')}}" method="post" enctype="multipart/form-data">
                 @csrf
                     <div class="row">
                     <div class="col-md-6">
@@ -31,7 +31,33 @@
                         <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
                     </div>
                     </div>
-                    
+                    <div class="col-md-6">
+                        
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="cc-number" class="control-label mb-1">Product Description</label>
+                                    <input id="cc-number" name="image[]" type="file" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                    <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>   
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="cc-number" class="control-label mb-1">Product Description</label>
+                                    <input id="cc-number" name="image[]" type="file" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                    <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>   
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="cc-number" class="control-label mb-1">Product Description</label>
+                                    <input id="cc-number" name="image[]" type="file" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                    <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>   
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
