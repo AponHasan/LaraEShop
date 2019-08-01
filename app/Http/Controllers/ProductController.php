@@ -14,6 +14,13 @@ class ProductController extends Controller
 {
     //
 
+    public function getlist()
+    {
+        $products = Product::latest('id')->get();
+        // dd($products);
+        return view('page.product.list',compact('products'));
+    }
+
     public function products()
     {
         $products = Product::orderBy('id','desc')->get();
@@ -44,6 +51,7 @@ class ProductController extends Controller
             foreach($request->image as $images)
             {
                 // $images=$request->file('image');
+        //     {
                 $img='image'.time(). '.'. $images->getClientOriginalExtension();
                 $localtion=public_path('images/products/' .$img);
                 Image::make($images)->save($localtion);
@@ -76,6 +84,28 @@ class ProductController extends Controller
 
             
 
-            return "Success";
+            return redirect()->Route('admin.product.getlist')->with('success','product create Successfull');
+    }
+
+    public function getedit($id)
+    {
+        $product = Product::find($id);
+       return view('page.product.edit',compact('product'));
+    }
+
+    public function posUpdate(Request $request, $id)
+    {
+        // dd($request);
+        
+
+            $product = Product::find($id);
+            $product->title = $request->title;
+            $product->description = $request->description;
+            $product->price = $request->price;
+
+            $product->save();
+
+
+            return redirect()->Route('admin.product.getlist')->with('success','product Update Successfull');
     }
 }

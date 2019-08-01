@@ -1,8 +1,8 @@
 <div class="list-group">
     <a href="#" class="list-group-item list-group-item-action active">
-        Active item 
+        Product Category 
     </a>
-    <a href="#" class="list-group-item list-group-item-action">First item</a>
-    <a href="#" class="list-group-item list-group-item-action">Second item</a>
-    <a href="#" class="list-group-item list-group-item-action">Third item</a>
+    <a href="#" class="list-group-item list-group-item-action">Category 1</a>
+    <a href="#" class="list-group-item list-group-item-action">Category 2</a>
+    <a href="#" class="list-group-item list-group-item-action">Category 3</a>
 </div>
