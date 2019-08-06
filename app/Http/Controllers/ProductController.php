@@ -108,4 +108,15 @@ class ProductController extends Controller
 
             return redirect()->Route('admin.product.getlist')->with('success','product Update Successfull');
     }
+
+    public function delete($id)
+    {
+        $product = Product::find($id);
+        if(!is_null($product ))
+        {
+            $product->delete();
+        }
+        session()->flash('success','Product has delete successfully');
+        return back();
+    }
 }

@@ -32,6 +32,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::post('/product/create','ProductController@postcreate')->name('admin.product.postcreate');
     Route::get('/product/edit/{id}','ProductController@getedit')->name('admin.product.getedit');
     Route::post('/product/edit/{id}','ProductController@posUpdate')->name('admin.product.posUpdate');
+    Route::post('/product/delete/{id}','ProductController@delete')->name('admin.product.delete');
 
 });
 
